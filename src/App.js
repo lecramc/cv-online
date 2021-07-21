@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import React, { Component } from "react";
@@ -11,13 +10,19 @@ const commands = {
     fn: (...args) => args.join(" "),
   },
 };
+const styles = {
+  maxHeight: "300px",
+  maxWidth: "720px",
+  margin: "10% auto",
+};
 
 class MyTerminal extends Component {
   render() {
     return (
       <Terminal
+        style={styles}
         commands={commands}
-        welcomeMessage={"Welcome to the React terminal!"}
+        welcomeMessage={"Welcome to my home !"}
         promptLabel={"clement@marcel:~$"}
       />
     );
