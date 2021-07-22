@@ -1,4 +1,4 @@
-import "./css/Terminal.css";
+import "./Terminal.css";
 
 import React, { Component } from "react";
 import Terminal from "react-console-emulator";
