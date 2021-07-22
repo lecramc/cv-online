@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import MyTerminal from "./App";
+import MyTerminal from "./components/Terminal/Terminal";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
