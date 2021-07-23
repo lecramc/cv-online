@@ -33,7 +33,7 @@ class Background extends Component {
               value: "#fff",
             },
           },
-          fpsLimit: 60,
+          fpsLimit: 100,
           interactivity: {
             detectsOn: "canvas",
             events: {
@@ -58,7 +58,7 @@ class Background extends Component {
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
+                distance: 100,
                 duration: 0.4,
               },
               grab: {
