@@ -9,11 +9,18 @@ const commands = {
     usage: "echo <string>",
     fn: (...args) => args.join(" "),
   },
+  about: {
+    description: "Short description about me.",
+    usage: "about",
+    fn: () =>
+      "My name is Clément, I'm 23 years old. I live in Bordeaux and I am Software Developper. ",
+  },
 };
 const styles = {
-  maxHeight: "300px",
+  maxHeight: "400px",
   maxWidth: "720px",
   margin: "10% auto",
+  backgroundColor: "#3f3d3d",
 };
 
 class MyTerminal extends Component {
@@ -22,8 +29,10 @@ class MyTerminal extends Component {
       <Terminal
         style={styles}
         commands={commands}
-        welcomeMessage={"Welcome to my home !"}
-        promptLabel={"clement@marcel:~$"}
+        welcomeMessage={"Welcome to my home ! "}
+        promptLabel={<strong>clement@marcel:~$</strong>}
+        promptLabelStyle={{ color: "#7cd697" }}
+        inputTextStyle={{ color: "#ffc50a" }}
       />
     );
   }
