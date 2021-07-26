@@ -2,6 +2,7 @@ import "./Terminal.css";
 
 import React, { Component } from "react";
 import Terminal from "react-console-emulator";
+import { render, Color } from "ink";
 
 const commands = {
   echo: {
@@ -13,7 +14,14 @@ const commands = {
     description: "Short description about me.",
     usage: "about",
     fn: () =>
-      "My name is Clément, I'm 23 years old. I live in Bordeaux and I am Software Developper. ",
+      "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. ",
+  },
+  course: {
+    description: "My course",
+    usage: "courses",
+    fn: () =>
+      <Color red>2019/2021</Color> +
+      "- Software Developper \n => Formation BAC +2 \n CESI Apprenticeship | Bordeaux",
   },
 };
 const styles = {
