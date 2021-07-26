@@ -2,7 +2,6 @@ import "./Terminal.css";
 
 import React, { Component } from "react";
 import Terminal from "react-console-emulator";
-import { render, Color } from "ink";
 
 const commands = {
   echo: {
@@ -20,8 +19,7 @@ const commands = {
     description: "My course",
     usage: "courses",
     fn: () =>
-      <Color red>2019/2021</Color> +
-      "- Software Developper \n => Formation BAC +2 \n CESI Apprenticeship | Bordeaux",
+      "2019/2021 - Software Developper \n => Formation BAC +2 \n CESI Apprenticeship | Bordeaux",
   },
 };
 const styles = {
