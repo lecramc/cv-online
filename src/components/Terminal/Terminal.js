@@ -2,6 +2,7 @@ import "./Terminal.css";
 
 import React, { Component } from "react";
 import Terminal from "react-console-emulator";
+import CoursesTemplate from "../Templates/CoursesTemplate";
 
 const commands = {
   echo: {
@@ -19,13 +20,11 @@ const commands = {
     description: "My course",
     usage: "courses",
     fn: () => (
-      <div className="courses">
-        <p>
-          <strong>2019/2021 - Software Developper</strong>
-          <br /> - Formation BAC +2
-          <br /> <i>CESI Apprenticeship | Bordeaux</i>
-        </p>
-      </div>
+      <CoursesTemplate
+        what="2019/2021 - Software Developper"
+        formation="=> Fromation BAC +2"
+        where="CESI Apprenticeship | Bordeaux, Gironde"
+      />
     ),
   },
 };
