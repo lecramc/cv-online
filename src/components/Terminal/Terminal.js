@@ -20,11 +20,18 @@ const commands = {
     description: "My course",
     usage: "courses",
     fn: () => (
-      <CoursesTemplate
-        what="2019/2021 - Software Developper"
-        formation="=> Fromation BAC +2"
-        where="CESI Apprenticeship | Bordeaux, Gironde"
-      />
+      <div>
+        <CoursesTemplate
+          what="2019/2021 - Software Developper"
+          formation="=> Fromation BAC +2"
+          where="CESI Apprenticeship | Bordeaux, Gironde"
+        />
+        <CoursesTemplate
+          what="2017/2019 - BTS SNEC"
+          formation="Electronic and Digital System"
+          where="CFAI Aquitaine | Bruges, Gironde"
+        />
+      </div>
     ),
   },
 };
