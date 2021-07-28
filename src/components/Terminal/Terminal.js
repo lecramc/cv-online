@@ -2,6 +2,7 @@ import "./Terminal.css";
 
 import React, { Component } from "react";
 import Terminal from "react-console-emulator";
+import CoursesTemplate from "../Templates/CoursesTemplate";
 
 const commands = {
   echo: {
@@ -13,7 +14,18 @@ const commands = {
     description: "Short description about me.",
     usage: "about",
     fn: () =>
-      "My name is Clément, I'm 23 years old. I live in Bordeaux and I am Software Developper. ",
+      "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. ",
+  },
+  courses: {
+    description: "My course",
+    usage: "courses",
+    fn: () => (
+      <CoursesTemplate
+        what="2019/2021 - Software Developper"
+        formation="=> Fromation BAC +2"
+        where="CESI Apprenticeship | Bordeaux, Gironde"
+      />
+    ),
   },
 };
 const styles = {
@@ -30,7 +42,7 @@ class MyTerminal extends Component {
         style={styles}
         commands={commands}
         welcomeMessage={"Welcome to my home ! "}
-        promptLabel={<strong>clement@marcel:~$</strong>}
+        promptLabel={"clement@marcel:~$"}
         promptLabelStyle={{ color: "#7cd697" }}
         inputTextStyle={{ color: "#ffc50a" }}
       />
