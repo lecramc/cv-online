@@ -15,11 +15,18 @@ const commands = {
     fn: () =>
       "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. ",
   },
-  course: {
+  courses: {
     description: "My course",
     usage: "courses",
-    fn: () =>
-      "2019/2021 - Software Developper \n => Formation BAC +2 \n CESI Apprenticeship | Bordeaux",
+    fn: () => (
+      <div className="courses">
+        <p>
+          <strong>2019/2021 - Software Developper</strong>
+          <br /> - Formation BAC +2
+          <br /> <i>CESI Apprenticeship | Bordeaux</i>
+        </p>
+      </div>
+    ),
   },
 };
 const styles = {
@@ -36,7 +43,7 @@ class MyTerminal extends Component {
         style={styles}
         commands={commands}
         welcomeMessage={"Welcome to my home ! "}
-        promptLabel={<strong>clement@marcel:~$</strong>}
+        promptLabel={"clement@marcel:~$"}
         promptLabelStyle={{ color: "#7cd697" }}
         inputTextStyle={{ color: "#ffc50a" }}
       />
