@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import Terminal from "react-console-emulator";
 import CoursesTemplate from "../Templates/CoursesTemplate";
 import ExperiencesTemplate from "../Templates/ExperiencesTemplate";
+import data from "../../json/data.json"
 
 const commands = {
   echo: {
@@ -14,8 +15,7 @@ const commands = {
   about: {
     description: "Short description about me.",
     usage: "about",
-    fn: () =>
-      "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. \n I chose the OpenClassrooms, which specialises in the field of computer development in order to continue my studies in a sandwich course. \n Not having been convinced by the work-study formats and the and the programme of the schools in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification ",
+    fn: () => data.about
   },
   courses: {
     description: "My course",
