@@ -1,0 +1,83 @@
+{
+    "about": "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. \n I chose the OpenClassrooms, which specialises in the field of computer development in order to continue my studies in a sandwich course. \n Not having been convinced by the work-study formats and the and the programme of the schools in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification ",
+    "courses": [
+        {
+            "id": "1",
+            "date": "2019/2021",
+            "what": "Software Developper",
+            "formation": "=> Formation BAC +2",
+            "where": "CESI Apprenticeship | Bordeaux, Gironde"
+        },
+        {
+            "id": "2",
+            "date": "2017/2019",
+            "what": "Installation Engineer",
+            "formation": "=> BTS Electronic and Digital System",
+            "where": "CFAI Aquitaine | Bruges, Gironde"
+        }
+    ],
+    "xp": [
+        {
+            "id": "1",
+            "date": "2019-2021",
+            "company": "WININFO",
+            "type": "(Apprenticeship)",
+            "tasks": [
+                {
+                    "value": " - ERP, CRM"
+                },
+                {
+                    "value": " - Creation of modules for our ERP in PHP"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "date": "2017-2019",
+            "company": "Cenov' Security",
+            "type": "(Apprenticeship)",
+            "tasks": [
+                {
+                    "value": " - Installation and configuration of security systems (video surveillance, alarms, security gates)"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "date": "2017 (2 mois)",
+            "company": "Centre Hospitalier Arcachon",
+            "type": "(Stage)",
+            "tasks": [
+                {
+                    "value": " - Biomedical service, diagnosis and repair of electronic equipment."
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "date": "2016 (1 mois)",
+            "company": "Isis Médical",
+            "type": "(Job étudiant)",
+            "tasks": [
+                {
+                    "value": "- Stock management and disinfection of materials"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "date": "2016 (2 mois)",
+            "company": "Isis Médical",
+            "type": "(Stage)",
+            "tasks": [
+                {
+                    "value": " - Design of drawings and wiring of a pump station of a pumping station"
+                }
+            ]
+        }
+    ],
+    "interests": {},
+    "contact": {},
+    "hard": {},
+    "soft": {}
+}
