@@ -24,10 +24,28 @@
             "type": "(Apprenticeship)",
             "tasks": [
                 {
-                    "value": " - ERP, CRM"
+                    "value": " - ERP, CRM "
                 },
                 {
                     "value": " - Creation of modules for our ERP in PHP"
+                },
+                {
+                    "value": " - Creation of software in WD Language following a specification"
+                },
+                {
+                    "value": " - Implementation of Datatable Library"
+                },
+                {
+                    "value": " - Component improvement for our CRM in WD Language"
+                },
+                {
+                    "value": " - Setting up Git and Docker"
+                },
+                {
+                    "value": " - Addition of PHP functions to meet customer needs"
+                },
+                {
+                    "value": " - Hotline and Debugging"
                 }
             ]
         },
@@ -67,7 +85,7 @@
         {
             "id": "5",
             "date": "2016 (2 mois)",
-            "company": "Isis Médical",
+            "company": "SYDEC",
             "type": "(Stage)",
             "tasks": [
                 {

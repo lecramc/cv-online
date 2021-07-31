@@ -6,7 +6,7 @@ class ExperiencesTemplate extends Component {
     this.date = props.date;
     this.company = props.company;
     this.type = props.type;
-    this.tasks = props.tasks;
+    this.task = props.task;
   }
   render() {
     return (
@@ -17,7 +17,7 @@ class ExperiencesTemplate extends Component {
           </strong>
           {this.type}
           <br />
-          {this.tasks}
+          {this.task}
         </p>
       </div>
     );
