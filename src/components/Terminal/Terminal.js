@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Terminal from "react-console-emulator";
 import CoursesTemplate from "../Templates/CoursesTemplate";
 import ExperiencesTemplate from "../Templates/ExperiencesTemplate";
-import data from "../../json/data.json"
+import data from "../../json/data.json";
 
 const commands = {
   echo: {
@@ -15,25 +15,22 @@ const commands = {
   about: {
     description: "Short description about me.",
     usage: "about",
-    fn: () => data.about
+    fn: () => data.about,
   },
   courses: {
     description: "My course",
     usage: "courses",
     fn: () => (
       <div>
-        <CoursesTemplate
-          date="2019/2021"
-          what="Software Developper"
-          formation="=> Fromation BAC +2"
-          where="CESI Apprenticeship | Bordeaux, Gironde"
-        />
-        <CoursesTemplate
-          date="2017/2019"
-          what="BTS SNEC"
-          formation="Electronic and Digital System"
-          where="CFAI Aquitaine | Bruges, Gironde"
-        />
+        {data.courses.map((el) => (
+          <CoursesTemplate
+            key={el.id}
+            date={el.date}
+            what={el.what}
+            formation={el.formation}
+            where={el.where}
+          />
+        ))}
       </div>
     ),
   },
@@ -42,31 +39,15 @@ const commands = {
     usage: "experiences",
     fn: () => (
       <div>
-        <ExperiencesTemplate
-          date="2019-2021"
-          company="WININFO"
-          type="(Alternance)"
-        />
-        <ExperiencesTemplate
-          date="2017-2019"
-          company="CENOV' Sécurité"
-          type="(Alternance)"
-        />
-        <ExperiencesTemplate
-          date="2017 (2 mois)"
-          company="Centre Hospitalier Arcachon"
-          type="(Stage)"
-        />
-        <ExperiencesTemplate
-          date="2016 (1 mois)"
-          company="Isis Médical"
-          type="(Stage)"
-        />
-        <ExperiencesTemplate
-          date="2016 (2 mois)"
-          company="SYDEC"
-          type="(Stage)"
-        />
+        {data.xp.map((el) => (
+          <ExperiencesTemplate
+            key={el.id}
+            date={el.date}
+            company={el.company}
+            type={el.type}
+            tasks={el.tasks.value}
+          />
+        ))}
       </div>
     ),
   },
