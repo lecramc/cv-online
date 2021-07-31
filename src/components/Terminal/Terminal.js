@@ -45,7 +45,7 @@ const commands = {
             date={el.date}
             company={el.company}
             type={el.type}
-            tasks={el.tasks.value}
+            tasks={el.tasks.map((task) => task.value)}
           />
         ))}
       </div>
