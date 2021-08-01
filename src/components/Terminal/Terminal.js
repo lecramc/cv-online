@@ -63,11 +63,26 @@ const commands = {
     usage: "contact",
     fn: () => (
       <div>
-        <p>Phone : {data.contact.phone}</p>
-        <p>Mail : {data.contact.mail}</p>
-        <p>LinkedIn : {data.contact.linkedin}</p>
-        <p>GitHub : {data.contact.github}</p>
-        <p>GitLab : {data.contact.gitlab}</p>
+        <p>
+          <strong>Phone : </strong>
+          {data.contact.phone}
+        </p>
+        <p>
+          <strong>Mail : </strong>
+          {data.contact.mail}
+        </p>
+        <p>
+          <strong>LinkedIn : </strong>{" "}
+          <a href={data.contact.linkedin}>Click here </a>
+        </p>
+        <p>
+          <strong>GitHub : </strong>
+          <a href={data.contact.github}>Click here</a>
+        </p>
+        <p>
+          <strong>GitLab : </strong>{" "}
+          <a href={data.contact.gitlab}>Click here</a>
+        </p>
       </div>
     ),
   },
