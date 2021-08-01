@@ -53,6 +53,11 @@ const commands = {
       </div>
     ),
   },
+  interests: {
+    description: "My Interests",
+    usage: "interests",
+    fn: () => data.interests,
+  },
 };
 const styles = {
   maxWidth: "720px",
