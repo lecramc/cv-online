@@ -94,8 +94,35 @@
             ]
         }
     ],
-    "interests": " - New technologies \n - Programming \n - Electronics \n - Computer science \n - Sports (football, rugby, bodybuilding...) \n - Travel (London, Florida, Croatia ...) \n - Photography \n - Car/Motorcycle",
-    "contact": {},
-    "hard": {},
-    "soft": {}
+    "interests": " - New technologies \n - Programming \n - Electronics \n - Computer sciences \n - Sports (football, rugby, bodybuilding...) \n - Travel (London, Florida, Croatia ...) \n - Photography \n - Car/Motorcycle",
+    "contact": {
+        "mail": "clmtmarcel@gmail.com",
+        "phone": "06 46 14 20 48",
+        "linkedin": "https://www.linkedin.com/in/cl%C3%A9ment-marcel-333a35152/",
+        "github": "https://github.com/lecramc",
+        "gitlab": "https://gitlab.com/lecramc"
+    },
+    "hard": [
+        {
+            "title": "Programming",
+            "value": "PHP, Python, AGL PC SOFT"
+        },
+        {
+            "title": "Web Development",
+            "value": "HTML, SCSS, JS, React"
+        },
+        {
+            "title": "Database",
+            "value": "MySQL, MariaDB"
+        },
+        {
+            "title": "Linux",
+            "value": "Debian, Fedora"
+        },
+        {
+            "title": "Office",
+            "value": "Office Suite, Adobe"
+        }
+    ],
+    "soft": " - Curious \n - Autonomous \n - Adaptability \n - Team spirit \n - Flexibility \n - Be proactive"
 }
