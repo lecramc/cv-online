@@ -53,6 +53,44 @@ const commands = {
       </div>
     ),
   },
+  interests: {
+    description: "My Interests",
+    usage: "interests",
+    fn: () => data.interests,
+  },
+  contact: {
+    description: "How to contact me",
+    usage: "contact",
+    fn: () => (
+      <div>
+        <p>Phone : {data.contact.phone}</p>
+        <p>Mail : {data.contact.mail}</p>
+        <p>LinkedIn : {data.contact.linkedin}</p>
+        <p>GitHub : {data.contact.github}</p>
+        <p>GitLab : {data.contact.gitlab}</p>
+      </div>
+    ),
+  },
+  hardskills: {
+    description: "My Hard Skills",
+    usage: "hardskills",
+    fn: () => (
+      <div>
+        {data.hard.map((el) => (
+          <p>
+            <strong>{el.title}</strong>
+            <br />
+            {el.value}
+          </p>
+        ))}
+      </div>
+    ),
+  },
+  softskills: {
+    description: "My Soft Skills",
+    usage: "softskills",
+    fn: () => data.soft,
+  },
 };
 const styles = {
   maxWidth: "720px",
@@ -67,8 +105,7 @@ class MyTerminal extends Component {
         style={styles}
         commands={commands}
         welcomeMessage={"Welcome to my home ! "}
-        promptLabel={"clement@marcel:~$"}
-        promptLabelStyle={{ color: "#7cd697" }}
+        promptLabel={<span class="promptLabel">clement@marcel:~$</span>}
         inputTextStyle={{ color: "#ffc50a" }}
       />
     );
