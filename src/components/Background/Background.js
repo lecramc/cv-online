@@ -8,7 +8,6 @@ class Background extends Component {
     super(props);
 
     this.particlesInit = this.particlesInit.bind(this);
-    this.particlesLoaded = this.particlesLoaded.bind(this);
   }
 
   particlesInit(main) {
@@ -29,7 +28,7 @@ class Background extends Component {
         options={{
           background: {
             color: {
-              value: "#fff",
+              value: "#77b287",
             },
           },
           fpsLimit: 100,
@@ -37,7 +36,7 @@ class Background extends Component {
             detectsOn: "canvas",
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {
@@ -61,7 +60,7 @@ class Background extends Component {
                 duration: 0.4,
               },
               grab: {
-                distance: 300,
+                distance: 400,
                 links: {
                   blink: false,
                   consent: false,
@@ -72,10 +71,10 @@ class Background extends Component {
           },
           particles: {
             color: {
-              value: "#8000ff",
+              value: "#fff",
             },
             links: {
-              color: "#8000ff",
+              color: "#fff",
               distance: 100,
               enable: true,
               opacity: 0.7,
@@ -87,7 +86,7 @@ class Background extends Component {
             move: {
               direction: "none",
               enable: true,
-              outMode: "bounce",
+              outMode: "out",
               random: false,
               speed: 3,
               straight: false,

@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import MyTerminal from "./components/Terminal/Terminal";
-import Particles from "./components/Background/Background";
+
 import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <MyTerminal />
-    <Particles />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
