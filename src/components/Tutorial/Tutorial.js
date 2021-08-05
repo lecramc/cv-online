@@ -58,6 +58,5 @@ function Step3(props) {
     </div>
   );
 }
-function FinalStep(props) {}
 
 export default Tutorial;
