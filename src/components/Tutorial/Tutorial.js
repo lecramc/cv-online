@@ -2,23 +2,27 @@ import "./Tutorial.css";
 
 import { Component } from "react";
 import { Steps, Step } from "react-step-builder";
-import Button from "@material-ui/core/Button";
-import Box from "@material-ui/core/Box";
+import { Button, Box } from "@material-ui/core";
 
 const Navigation = (props) => {
   return (
-    <Button id="next" onClick={props.next}>
-      Next
-    </Button>
+    <div>
+      {" "}
+      {props.isLast !== true && (
+        <Button id="next" onClick={props.next}>
+          Next
+        </Button>
+      )}
+    </div>
   );
 };
+
 const config = {
   navigation: {
     component: Navigation,
-    location: "after", // or after
+    location: "after",
   },
 };
-
 class Tutorial extends Component {
   render() {
     return (
