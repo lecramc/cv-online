@@ -1,8 +1,16 @@
 #next {
+  position: relative;
   float: right;
+  color: white;
+  background-color: #77b287;
 }
 .tutorial {
+  display: inline-block;
   width: 30vw;
   height: 15vh;
   background-color: azure;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }

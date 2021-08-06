@@ -2,14 +2,14 @@ import "./Tutorial.css";
 
 import { Component } from "react";
 import { Steps, Step } from "react-step-builder";
+import Button from "@material-ui/core/Button";
+import Box from "@material-ui/core/Box";
 
 const Navigation = (props) => {
   return (
-    <div class="nav">
-      <button id="next" onClick={props.next}>
-        Next
-      </button>
-    </div>
+    <Button id="next" onClick={props.next}>
+      Next
+    </Button>
   );
 };
 const config = {
@@ -22,13 +22,13 @@ const config = {
 class Tutorial extends Component {
   render() {
     return (
-      <div class="tutorial">
+      <Box class="tutorial">
         <Steps config={config}>
           <Step component={Step1} />
           <Step component={Step2} />
           <Step component={Step3} />
         </Steps>
-      </div>
+      </Box>
     );
   }
 }

@@ -109,7 +109,8 @@ const commands = {
 };
 const styles = {
   maxWidth: "720px",
-  margin: "10% auto",
+  minHeight: "360px",
+  margin: "auto",
   backgroundColor: "#3f3d3d",
 };
 
