@@ -6,19 +6,14 @@ import CoursesTemplate from "../Templates/CoursesTemplate";
 import ExperiencesTemplate from "../Templates/ExperiencesTemplate";
 import data from "../../json/data.json";
 
-const commands = {
-  echo: {
-    description: "Echo a passed string.",
-    usage: "echo <string>",
-    fn: (...args) => args.join(" "),
-  },
+export const commands = {
   about: {
-    description: "Short description about me.",
+    description: "A short description about me",
     usage: "about",
     fn: () => data.about,
   },
   courses: {
-    description: "My course",
+    description: "My studies since 4 years",
     usage: "courses",
     fn: () => (
       <div>
@@ -35,7 +30,7 @@ const commands = {
     ),
   },
   xp: {
-    description: "My Experiences",
+    description: "My professional experiences",
     usage: "experiences",
     fn: () => (
       <div>
@@ -54,12 +49,12 @@ const commands = {
     ),
   },
   interests: {
-    description: "My Interests",
+    description: "My Interests and what I love in my life",
     usage: "interests",
     fn: () => data.interests,
   },
   contact: {
-    description: "How to contact me",
+    description: "How to contact me to recruit me :)",
     usage: "contact",
     fn: () => (
       <div>
@@ -87,7 +82,7 @@ const commands = {
     ),
   },
   hardskills: {
-    description: "My Hard Skills",
+    description: "The things I'm good at",
     usage: "hardskills",
     fn: () => (
       <div>
@@ -102,14 +97,15 @@ const commands = {
     ),
   },
   softskills: {
-    description: "My Soft Skills",
+    description: "My personality traits",
     usage: "softskills",
     fn: () => data.soft,
   },
 };
 const styles = {
   maxWidth: "720px",
-  margin: "10% auto",
+  minHeight: "360px",
+  margin: "auto",
   backgroundColor: "#3f3d3d",
 };
 
