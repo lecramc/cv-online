@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Steps, Step } from "react-step-builder";
-import { Button, Box } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Button, Box, makeStyles, List, ListItemText } from "@material-ui/core";
+import { commands } from "../Terminal/Terminal";
 
 const useStyles = makeStyles({
   tutorial: {
@@ -16,6 +16,9 @@ const useStyles = makeStyles({
   next: {
     color: "#000",
     backgroundColor: "#77b287",
+  },
+  list: {
+    paddingLeft: "50px",
   },
 });
 class Tutorial extends Component {
@@ -50,12 +53,21 @@ class Tutorial extends Component {
     );
   };
   Step3 = (props) => {
+    console.log(Object.entries(commands));
     return (
       <div>
         <p>
-          For beggining use <strong>Clement --help</strong>, all of commands are
-          listed !
+          To use the terminal below, you will find a list of commands to get to
+          know me better. Just tap <strong>{commands.about.usage}</strong> for
+          example and learn more about me.
         </p>
+        <List className={this.classes.list}>
+          {Object.entries(commands).map((el) => (
+            <ListItemText>
+              {el[1].description} : <strong>{el[0]}</strong>
+            </ListItemText>
+          ))}
+        </List>
       </div>
     );
   };
