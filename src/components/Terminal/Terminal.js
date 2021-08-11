@@ -20,12 +20,21 @@ class MyTerminal extends Component {
   commands = {
     about: {
       description: "A short description about me",
-      fn: () => data.about,
+      fn: () => (
+        <div>
+          <h2> | About me | </h2>
+          <p>{data.about.me}</p>
+          <p>{data.about.who}</p>
+          <p>{data.about.why}</p>
+        </div>
+      ),
     },
-    courses: {
+    studies: {
       description: "My studies since 4 years",
       fn: () => (
         <div>
+          <h2> | Studies |</h2>
+
           {data.courses.map((el) => (
             <CoursesTemplate
               key={el.id}
@@ -43,6 +52,8 @@ class MyTerminal extends Component {
       fn: () => {
         return (
           <div>
+            <h2> | Professional Experiences |</h2>
+
             {data.xp.map((el) => (
               <ExperiencesTemplate
                 key={el.id}
@@ -60,12 +71,20 @@ class MyTerminal extends Component {
     },
     interests: {
       description: "My Interests and what I love in my life",
-      fn: () => data.interests,
+      fn: () => (
+        <div>
+          <h2> | Interests | </h2>
+          {data.interests.map((el) => (
+            <p>{el.value}</p>
+          ))}
+        </div>
+      ),
     },
     contact: {
       description: "How to contact me to recruit me :)",
       fn: () => (
         <div>
+          <h2> | Contact |</h2>
           <p>
             <strong>Phone : </strong>
             {data.contact.phone}
@@ -111,6 +130,7 @@ class MyTerminal extends Component {
       description: "The things I'm good at",
       fn: () => (
         <div>
+          <h2> | Hard Skills |</h2>
           {data.hard.map((el) => (
             <p>
               <strong>{el.title}</strong>
@@ -123,7 +143,15 @@ class MyTerminal extends Component {
     },
     softskills: {
       description: "My personality traits",
-      fn: () => data.soft,
+      fn: () => (
+        <div>
+          {" "}
+          <h2> | Soft Skills |</h2>
+          {data.soft.map((el) => (
+            <p>{el.value}</p>
+          ))}
+        </div>
+      ),
     },
   };
 
@@ -142,6 +170,7 @@ class MyTerminal extends Component {
         inputTextStyle={{ color: "#ffc50a" }}
         ignoreCommandCase
         autofocus
+        locked
       />
     );
   }

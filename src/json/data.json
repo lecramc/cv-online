@@ -1,5 +1,9 @@
 {
-    "about": "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. \n I chose OpenClassrooms, which specialises in the field of computer development in order to continue my studies in a sandwich course. \n Not having been convinced by the work-study formats and the programme of the schools in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification.",
+    "about": {
+        "me": "My name is Clément, I'm 23 years old. I live in Bordeaux and I am Software Developper.",
+        "who": "I chose OpenClassrooms, which specialises in the field of computer development in order to continue my studies in a sandwich course.",
+        "why": "Not having been convinced by the work-study formats and the programme of the schools in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification."
+    },
     "courses": [
         {
             "id": "1",
@@ -94,7 +98,32 @@
             ]
         }
     ],
-    "interests": " - New technologies \n - Programming \n - Electronics \n - Computer sciences \n - Sports (football, rugby, bodybuilding...) \n - Travel (London, Florida, Croatia ...) \n - Photography \n - Car/Motorcycle",
+    "interests": [
+        {
+            "value": " - New technologies"
+        },
+        {
+            "value": " - Programming"
+        },
+        {
+            "value": " - Electronics "
+        },
+        {
+            "value": " - Computer sciences"
+        },
+        {
+            "value": " - Sports (football, rugby, bodybuilding...)"
+        },
+        {
+            "value": " - Travel (London, Florida, Croatia ...) "
+        },
+        {
+            "value": " - Photography"
+        },
+        {
+            "value": "- Car/Motorcycle"
+        }
+    ],
     "contact": {
         "mail": "clmtmarcel@gmail.com",
         "phone": "06 46 14 20 48",
@@ -124,5 +153,24 @@
             "value": "Office Suite, Adobe"
         }
     ],
-    "soft": " - Curious \n - Autonomous \n - Adaptability \n - Team spirit \n - Flexibility \n - Be proactive"
+    "soft": [
+        {
+            "value": "- Curious"
+        },
+        {
+            "value": "- Autonomous"
+        },
+        {
+            "value": " - Adaptability "
+        },
+        {
+            "value": " - Team spirit"
+        },
+        {
+            "value": "- Flexibility"
+        },
+        {
+            "value": " - Be proactive"
+        }
+    ]
 }

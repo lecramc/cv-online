@@ -8,6 +8,7 @@ const useStyles = makeStyles((themes) => ({
       width: "auto",
       height: "auto",
       padding: "5px",
+      marginBottom: "5px",
     },
     [themes.breakpoints.up("md")]: {
       width: "30vw",
@@ -15,6 +16,7 @@ const useStyles = makeStyles((themes) => ({
       marginLeft: "10px",
       padding: "10px",
       marginTop: "10px",
+      marginBottom: "10px",
     },
     backgroundColor: "white",
     borderRadius: "10px",
