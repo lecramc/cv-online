@@ -1,15 +1,17 @@
 import { Component } from "react";
 import { Button, Box, makeStyles } from "@material-ui/core";
+import pdf from "../../files/CV Clément MARCEL G.pdf";
 
 const useStyles = makeStyles((themes) => ({
   box: {
     width: "100%",
+    textAlign: "center",
   },
   download: {
-    color: "#77b287",
+    color: "#000",
     backgroundColor: "#fff",
     padding: "10px",
-    textAlign: "center",
+    marginBottom: "5px",
   },
 }));
 
@@ -22,7 +24,8 @@ class DownloadFile extends Component {
     return (
       <Box className={this.classes.box}>
         <Button className={this.classes.download}>
-          <a href="" download>
+          No time for play :
+          <a href={pdf} download>
             Download my Curriculum Vitae
           </a>
         </Button>

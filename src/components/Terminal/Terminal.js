@@ -185,7 +185,7 @@ class MyTerminal extends Component {
         style={this.styles}
         commands={this.commands}
         welcomeMessage={"Welcome to my home ! "}
-        promptLabel={<span class="promptLabel">clement@marcel:~$</span>}
+        promptLabel={<span className="promptLabel">clement@marcel:~$</span>}
         inputTextStyle={{ color: "#ffc50a" }}
         ignoreCommandCase
         autofocus
