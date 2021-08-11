@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { Steps, Step } from "react-step-builder";
-import { Button, Box, makeStyles, List, ListItemText } from "@material-ui/core";
-import { commands } from "../Terminal/Terminal";
+import { Button, Box, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   tutorial: {
@@ -53,21 +52,12 @@ class Tutorial extends Component {
     );
   };
   Step3 = (props) => {
-    console.log(Object.entries(commands));
     return (
       <div>
         <p>
-          To use the terminal below, you will find a list of commands to get to
-          know me better. Just tap <strong>{commands.about.usage}</strong> for
-          example and learn more about me.
+          To use the terminal, you will find a list of commands to get to know
+          me better with the <strong>help</strong> command.
         </p>
-        <List className={this.classes.list}>
-          {Object.entries(commands).map((el) => (
-            <ListItemText>
-              {el[1].description} : <strong>{el[0]}</strong>
-            </ListItemText>
-          ))}
-        </List>
       </div>
     );
   };

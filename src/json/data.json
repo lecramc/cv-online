@@ -1,5 +1,5 @@
 {
-    "about": "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. \n I chose the OpenClassrooms, which specialises in the field of computer development in order to continue my studies in a sandwich course. \n Not having been convinced by the work-study formats and the and the programme of the schools in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification ",
+    "about": "My name is Clément, I'm 23 years old. \n I live in Bordeaux and I am Software Developper. \n I chose OpenClassrooms, which specialises in the field of computer development in order to continue my studies in a sandwich course. \n Not having been convinced by the work-study formats and the programme of the schools in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification.",
     "courses": [
         {
             "id": "1",
@@ -98,7 +98,7 @@
     "contact": {
         "mail": "clmtmarcel@gmail.com",
         "phone": "06 46 14 20 48",
-        "linkedin": "https://www.linkedin.com/in/cl%C3%A9ment-marcel-333a35152/",
+        "linkedin": "https://www.linkedin.com/in/clementmarcel",
         "github": "https://github.com/lecramc",
         "gitlab": "https://gitlab.com/lecramc"
     },
