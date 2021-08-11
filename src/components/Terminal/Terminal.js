@@ -20,36 +20,43 @@ class MyTerminal extends Component {
   commands = {
     about: {
       description: "A short description about me",
-      fn: () => (
-        <div>
-          <h2> | About me | </h2>
-          <p>{data.about.me}</p>
-          <p>{data.about.who}</p>
-          <p>{data.about.why}</p>
-        </div>
-      ),
+      fn: () => {
+        this.clearTerminal();
+        return (
+          <div>
+            <h2> | About me | </h2>
+            <p>{data.about.me}</p>
+            <p>{data.about.who}</p>
+            <p>{data.about.why}</p>
+          </div>
+        );
+      },
     },
     studies: {
       description: "My studies since 4 years",
-      fn: () => (
-        <div>
-          <h2> | Studies |</h2>
+      fn: () => {
+        this.clearTerminal();
+        return (
+          <div>
+            <h2> | Studies |</h2>
 
-          {data.courses.map((el) => (
-            <CoursesTemplate
-              key={el.id}
-              date={el.date}
-              what={el.what}
-              formation={el.formation}
-              where={el.where}
-            />
-          ))}
-        </div>
-      ),
+            {data.courses.map((el) => (
+              <CoursesTemplate
+                key={el.id}
+                date={el.date}
+                what={el.what}
+                formation={el.formation}
+                where={el.where}
+              />
+            ))}
+          </div>
+        );
+      },
     },
     xp: {
       description: "My professional experiences",
       fn: () => {
+        this.clearTerminal();
         return (
           <div>
             <h2> | Professional Experiences |</h2>
@@ -71,87 +78,99 @@ class MyTerminal extends Component {
     },
     interests: {
       description: "My Interests and what I love in my life",
-      fn: () => (
-        <div>
-          <h2> | Interests | </h2>
-          {data.interests.map((el) => (
-            <p>{el.value}</p>
-          ))}
-        </div>
-      ),
+      fn: () => {
+        this.clearTerminal();
+        return (
+          <div>
+            <h2> | Interests | </h2>
+            {data.interests.map((el) => (
+              <p>{el.value}</p>
+            ))}
+          </div>
+        );
+      },
     },
     contact: {
-      description: "How to contact me to recruit me :)",
-      fn: () => (
-        <div>
-          <h2> | Contact |</h2>
-          <p>
-            <strong>Phone : </strong>
-            {data.contact.phone}
-          </p>
-          <p>
-            <strong>Mail : </strong>
-            {data.contact.mail}
-          </p>
-          <p>
-            <strong>LinkedIn : </strong>{" "}
-            <a
-              href={data.contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here{" "}
-            </a>
-          </p>
-          <p>
-            <strong>GitHub : </strong>
-            <a
-              href={data.contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here
-            </a>
-          </p>
-          <p>
-            <strong>GitLab : </strong>{" "}
-            <a
-              href={data.contact.gitlab}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click here
-            </a>
-          </p>
-        </div>
-      ),
+      description: "How to contact me ? ",
+      fn: () => {
+        this.clearTerminal();
+        return (
+          <div>
+            <h2> | Contact |</h2>
+            <p>
+              <strong>Phone : </strong>
+              {data.contact.phone}
+            </p>
+            <p>
+              <strong>Mail : </strong>
+              {data.contact.mail}
+            </p>
+            <p>
+              <strong>LinkedIn : </strong>{" "}
+              <a
+                href={data.contact.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click here{" "}
+              </a>
+            </p>
+            <p>
+              <strong>GitHub : </strong>
+              <a
+                href={data.contact.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click here
+              </a>
+            </p>
+            <p>
+              <strong>GitLab : </strong>{" "}
+              <a
+                href={data.contact.gitlab}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click here
+              </a>
+            </p>
+          </div>
+        );
+      },
     },
     hardskills: {
       description: "The things I'm good at",
-      fn: () => (
-        <div>
-          <h2> | Hard Skills |</h2>
-          {data.hard.map((el) => (
-            <p>
-              <strong>{el.title}</strong>
-              <br />
-              {el.value}
-            </p>
-          ))}
-        </div>
-      ),
+      fn: () => {
+        this.clearTerminal();
+        return (
+          <div>
+            <h2> | Hard Skills |</h2>
+            {data.hard.map((el) => (
+              <p>
+                <strong>{el.title}</strong>
+                <br />
+                {el.value}
+              </p>
+            ))}
+          </div>
+        );
+      },
     },
     softskills: {
       description: "My personality traits",
-      fn: () => (
-        <div>
-          {" "}
-          <h2> | Soft Skills |</h2>
-          {data.soft.map((el) => (
-            <p>{el.value}</p>
-          ))}
-        </div>
-      ),
+      fn: () => {
+        this.clearTerminal();
+        return (
+          <div>
+            {" "}
+            <h2> | Soft Skills |</h2>
+            {data.soft.map((el) => (
+              <p>{el.value}</p>
+            ))}
+          </div>
+        );
+      },
     },
   };
 
@@ -170,7 +189,6 @@ class MyTerminal extends Component {
         inputTextStyle={{ color: "#ffc50a" }}
         ignoreCommandCase
         autofocus
-        locked
       />
     );
   }
