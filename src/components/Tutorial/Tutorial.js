@@ -2,15 +2,22 @@ import { Component } from "react";
 import { Steps, Step } from "react-step-builder";
 import { Button, Box, makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((themes) => ({
   tutorial: {
-    width: "30vw",
-    height: "auto",
+    [themes.breakpoints.down("md")]: {
+      width: "auto",
+      height: "auto",
+      padding: "5px",
+    },
+    [themes.breakpoints.up("md")]: {
+      width: "30vw",
+      height: "auto",
+      marginLeft: "10px",
+      padding: "10px",
+      marginTop: "10px",
+    },
     backgroundColor: "white",
-    padding: "10px",
     borderRadius: "10px",
-    marginTop: "10px",
-    marginLeft: "10px",
   },
   next: {
     color: "#000",
@@ -19,7 +26,7 @@ const useStyles = makeStyles({
   list: {
     paddingLeft: "50px",
   },
-});
+}));
 class Tutorial extends Component {
   constructor(props) {
     super(props);
