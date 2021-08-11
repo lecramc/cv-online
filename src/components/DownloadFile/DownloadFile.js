@@ -24,7 +24,7 @@ class DownloadFile extends Component {
     return (
       <Box className={this.classes.box}>
         <Button className={this.classes.download}>
-          No time for play :
+          No time to play :
           <a href={pdf} download>
             Download my Curriculum Vitae
           </a>
