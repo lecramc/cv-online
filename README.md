@@ -1,4 +1,4 @@
 # I create an online curriculum Vitae about me
 
-Just go to clementmarcek.mcavbeast.fr
+Just go to [cv](clementmarcel.mcavbeast.fr)
 
