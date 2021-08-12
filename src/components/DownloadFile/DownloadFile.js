@@ -10,6 +10,9 @@ const useStyles = makeStyles((themes) => ({
   download: {
     color: "#000",
     backgroundColor: "#fff",
+    "&:hover": {
+      backgroundColor: "#ea4848",
+    },
     padding: "10px",
     marginBottom: "5px",
   },
@@ -24,7 +27,7 @@ class DownloadFile extends Component {
     return (
       <Box className={this.classes.box}>
         <Button className={this.classes.download}>
-          No time to play :
+          No time to play {">"}&nbsp;
           <a href={pdf} download>
             Download my Curriculum Vitae
           </a>

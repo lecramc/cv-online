@@ -67,8 +67,8 @@
         {
             "id": "3",
             "date": "2017 (2 mois)",
-            "company": "Centre Hospitalier Arcachon",
-            "type": "(Stage)",
+            "company": "Hospital Center Arcachon",
+            "type": "(Internship)",
             "tasks": [
                 {
                     "value": " - Biomedical service, diagnosis and repair of electronic equipment."
@@ -79,7 +79,7 @@
             "id": "4",
             "date": "2016 (1 mois)",
             "company": "Isis Médical",
-            "type": "(Job étudiant)",
+            "type": "(Student Job)",
             "tasks": [
                 {
                     "value": "- Stock management and disinfection of materials"
@@ -90,7 +90,7 @@
             "id": "5",
             "date": "2016 (2 mois)",
             "company": "SYDEC",
-            "type": "(Stage)",
+            "type": "(Internship)",
             "tasks": [
                 {
                     "value": " - Design of drawings and wiring of a pump station of a pumping station"
