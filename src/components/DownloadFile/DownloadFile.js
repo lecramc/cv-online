@@ -8,6 +8,9 @@ const useStyles = makeStyles((themes) => ({
     textAlign: "center",
   },
   download: {
+    [themes.breakpoints.down("md")]: {
+      fontSize: "0.8rem",
+    },
     color: "#000",
     backgroundColor: "#fff",
     "&:hover": {
