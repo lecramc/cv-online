@@ -9,7 +9,7 @@ const useStyles = makeStyles((themes) => ({
   },
   download: {
     [themes.breakpoints.down("md")]: {
-      fontSize: "0.8em",
+      fontSize: "0.7em",
     },
     color: "#000",
     backgroundColor: "#fff",
