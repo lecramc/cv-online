@@ -149,6 +149,10 @@
             "value": "Debian, Fedora"
         },
         {
+            "title": "Service",
+            "value": "Docker, Git"
+        },
+        {
             "title": "Office",
             "value": "Office Suite, Adobe"
         }
