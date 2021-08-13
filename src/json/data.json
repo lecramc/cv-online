@@ -1,8 +1,8 @@
 {
     "about": {
-        "me": "My name is Clément, I'm 23 years old. I live in Bordeaux and I am Software Developper.",
-        "who": "I chose OpenClassrooms, which specialises in the field of computer development in order to continue my studies in apprenticeship.",
-        "why": "Not having been convinced by the work-study formats and the programme of the schools in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification."
+        "me": "My name is Clément, I'm 23 years old. I live in Bordeaux and I am a Software Developper.",
+        "who": "I chose OpenClassrooms, which specialises in the field of computer development in order to continue my studies as an apprentice.",
+        "why": "Not having been convinced by the work-study formats and school's programs in my region, I want to continue in a framework offering more autonomy in order to obtain a RNCP level 6 qualification."
     },
     "courses": [
         {
@@ -93,7 +93,7 @@
             "type": "(Internship)",
             "tasks": [
                 {
-                    "value": " - Design of drawings and wiring of a pump station of a pumping station"
+                    "value": " - Design of drawings and wiring of a pump station"
                 }
             ]
         }
@@ -146,35 +146,38 @@
         },
         {
             "title": "Linux",
-            "value": "Debian, Fedora"
+            "value": "Debian, Fedora, Work on server and daily use"
         },
         {
             "title": "Service",
-            "value": "Docker, Git"
+            "value": "Docker (Setup a Linux environement with packages of PHP and MySql for work on a ERP locally), Git (Setup a repository, use git)"
         },
         {
             "title": "Office",
-            "value": "Office Suite, Adobe"
+            "value": "Office Suite, Adobe (Lightroom)"
         }
     ],
     "soft": [
         {
-            "value": "- Curious"
+            "value": " - Curious"
         },
         {
-            "value": "- Autonomous"
+            "value": " - Autonomous"
         },
         {
-            "value": " - Adaptability "
+            "value": " - Adaptable "
         },
         {
             "value": " - Team spirit"
         },
         {
-            "value": "- Flexibility"
+            "value": " - Flexible"
         },
         {
-            "value": " - Be proactive"
+            "value": " - Proactive"
+        },
+        {
+            "value": " - Resiliant"
         }
     ]
 }

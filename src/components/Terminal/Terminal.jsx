@@ -33,7 +33,7 @@ class MyTerminal extends Component {
       },
     },
     studies: {
-      description: "My studies since 4 years",
+      description: "My studies",
       fn: () => {
         this.clearTerminal();
         return (
@@ -77,7 +77,7 @@ class MyTerminal extends Component {
       },
     },
     interests: {
-      description: "My Interests and what I love in my life",
+      description: "My Interests and what I love in life",
       fn: () => {
         this.clearTerminal();
         return (
