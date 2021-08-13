@@ -150,7 +150,7 @@
         },
         {
             "title": "Service",
-            "value": "Docker (Setup a Linux environement with packages of PHP and MySql for work on a ERP locally), Git (Setup a repository, use git)"
+            "value": "Docker (Setup a Linux environment with PHP, MySQL packages for work on a local project), Git (Setup a repository, use git)"
         },
         {
             "title": "Office",
